@@ -9,7 +9,7 @@ struct view1: View {
     var body: some View {
         
         List(model.Students.sorted(by: {
-            $0.studentId > $1.studentId
+            $0.studentId < $1.studentId
         })) { student in
             
             
