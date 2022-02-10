@@ -8,7 +8,9 @@ struct view1: View {
     
     var body: some View {
         
-        List(model.Students) { student in
+        List(model.Students.sorted(by: {
+            $0.studentId > $1.studentId
+        })) { student in
             
             
             
@@ -24,7 +26,7 @@ struct view1: View {
                         
                         HStack{
                             Text("ชื่อ-นามสกุล ")
-                            Text(student.gender == "male" ? "Mr." : "Miss."  )
+                            Text(student.gender == "male" ? "Mr." : "Ms."  )
                             Text("\(student.firstname)  \(student.lastname)")
                         }
                         

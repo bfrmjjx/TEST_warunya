@@ -28,7 +28,7 @@ struct view2: View {
                         
                         HStack{
                             Text("ชื่อ-นามสกุล ")
-                            Text(student.gender == "male" ? "Mr." : "Miss."  )
+                            Text(student.gender == "male" ? "Mr." : "Ms."  )
                             Text("\(student.firstname)  \(student.lastname)")
                         }
                         
