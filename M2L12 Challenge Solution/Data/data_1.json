@@ -1,0 +1,30 @@
+[
+ {
+   "studentId": 10001,
+   "firstname": "John",
+   "lastname": "Doe",
+   "gender": "male",
+   "totalScore": 78
+ },
+ {
+   "studentId": 10002,
+   "firstname": "Jane",
+   "lastname": "Doe",
+   "gender": "female",
+   "totalScore": 42
+ },
+ {
+   "studentId": 10003,
+   "firstname": "Peter",
+   "lastname": "Parker",
+   "gender": "male",
+   "totalScore": 90
+ },
+ {
+   "studentId": 10004,
+   "firstname": "Tony",
+   "lastname": "Stark",
+   "gender": "male",
+   "totalScore": 81
+ }
+]
