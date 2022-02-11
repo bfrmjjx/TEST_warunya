@@ -3,7 +3,7 @@ import Foundation
 // Students
 class StudentModel: ObservableObject {
     
-    @Published  var  a:Int = 1
+    @Published  var  choosefliter:Int = 1
     
     @Published var Students = [Student]()
 

@@ -5,18 +5,18 @@ struct ContentView: View {
     
     @ObservedObject var model = StudentModel()
     
-
+    
     
     var body: some View {
         
         
         VStack{
-            
-            Picker("choosefliter", selection: $model.a ) {
 
-                    Text("Student Id").tag(1)
-                    Text("Score").tag(2)
-
+            Picker("choosefliter", selection: $model.choosefliter) {
+                
+                Text("Student Id").tag(1)
+                Text("Score").tag(2)
+                
             }
             .padding(.vertical, 3)
             .padding(.horizontal,15)
@@ -25,18 +25,17 @@ struct ContentView: View {
             
             
             
-            if model.a == 1 {
-                view1()
+            if model.choosefliter == 1 {
+                View1()
             }else{
-                view2()
+                View2()
             }
             
             
             
-            Spacer()
             
             
-        }
+        }.padding(.top,20)
         
         
         
